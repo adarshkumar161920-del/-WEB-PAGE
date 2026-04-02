@@ -1,0 +1,97 @@
+.testimonial-section {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden; /* for the bottom right cut-off avatar */
+}
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.testimonial-title {
+  display: inline-block;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 300;
+  color: var(--color-text);
+  letter-spacing: -1px;
+}
+
+.testimonial-content-area {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-card {
+  position: relative;
+  background-color: #f1faf3;
+  padding: 3rem 4rem;
+  border-radius: 30px;
+  max-width: 600px;
+  text-align: center;
+  z-index: 10;
+}
+
+.quote-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  position: relative;
+  z-index: 2;
+}
+
+.quote-mark {
+  position: absolute;
+  color: #cdd9d2;
+  font-size: 6rem;
+  line-height: 1;
+  font-family: serif;
+  z-index: 1;
+}
+
+.open-quote {
+  top: 10px;
+  left: 20px;
+}
+
+.close-quote {
+  bottom: -40px;
+  right: 20px;
+}
+
+.t-avatar {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.t-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Positioning avatars to match screenshot closely */
+.ta-1 { width: 90px; height: 90px; left: 10%; top: -30px; }
+.ta-2 { width: 40px; height: 40px; left: 5%; top: 120px; }
+.ta-3 { width: 140px; height: 140px; left: 12%; top: 140px; }
+.ta-4 { width: 80px; height: 80px; right: 10%; top: -20px; }
+.ta-5 { width: 50px; height: 50px; right: 18%; top: 30px; }
+.ta-6 { width: 200px; height: 200px; right: -20px; bottom: -50px; }
+
+@media (max-width: 900px) {
+  .testimonial-content-area {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+  .t-avatar {
+    display: none; /* Hide floating avatars on small screens for simplicity */
+  }
+}
